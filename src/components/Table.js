@@ -3,7 +3,17 @@ const Table = ({ sat }) => {
       <table>
        <thead>
         <tr>
-          <th>Header TBD</th>
+          <th>
+            <td>
+              <button type = "button" >Name</button>
+            </td>
+            <td>
+              <button type = "button" >Type</button>
+            </td>
+            <td>Operational</td>
+            <td>Orbit Type</td>
+            <td>Launch Date</td>
+          </th>
         </tr>
         </thead>
         <tbody>
