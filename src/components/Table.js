@@ -1,3 +1,5 @@
+import styling from "./styling.css";
+
 const Table = ({ sat }) => {
   return (
     <div>
@@ -15,7 +17,7 @@ const Table = ({ sat }) => {
           <td>{data.name}</td>
           <td>{data.type}</td>
           <td>{data.launchDate}</td>
-          <td>"Active"</td>
+          <td>{data.operational ? "Active": "Inactive"}</td>
         </tr>
           );
 })};
