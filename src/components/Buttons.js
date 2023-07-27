@@ -11,7 +11,7 @@ const Buttons = ({filterByType, setSat, displaySats}) => {
   );
 })}
 
-      <button onClick ={() => setSat (satData)}>All</button>
+      <button onClick ={() => setSat (satData)}>All Orbit</button>
       </div>
   );
 };
