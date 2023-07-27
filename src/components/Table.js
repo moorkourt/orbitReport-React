@@ -1,27 +1,26 @@
 const Table = ({ sat }) => {
   return (
+    <div>
       <table>
-       <thead>
+        {/* header */}
         <tr>
-          <th>
-            <td>
-              <button type = "button" >Name</button>
-            </td>
-            <td>
-              <button type = "button" >Type</button>
-            </td>
-            <td>Operational</td>
-            <td>Orbit Type</td>
-            <td>Launch Date</td>
-          </th>
+          <th>Name</th>
+          <th>Type of Satellite</th>
+          <th>Launch Date</th>
+          <th>Status</th>
         </tr>
-        </thead>
-        <tbody>
+        {sat.map((data, id ) => {
+          return (
         <tr>
-          <td>Row Data TBD</td>
+          <td>{data.name}</td>
+          <td>{data.type}</td>
+          <td>{data.launchDate}</td>
+          <td>"Active"</td>
         </tr>
-        </tbody>
+          );
+})};
       </table>
+    </div>
   );
 };
 
